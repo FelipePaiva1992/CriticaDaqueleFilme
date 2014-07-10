@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Mobile page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="resources/themes/criticaDaqueleFilme.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	
+		<script src="resources/js/funcoes.js"></script>
+		
+		
+	</head>
+	<body>
+		<div data-role="page" data-theme="a" id="page1">
+			<div data-role="header" data-position="inline">
+				<h1>Critica Daquele Filme</h1>
+			</div>
+			<div data-role="content" data-theme="a">
+				<input type="text" placeholder="Nome do Filme" id="nomeDoFilme"/>
+				<br>
+				<input type="button" value="Buscar" onclick="listarFilmesNome()"/>
+				
+			</div>
+		</div>
+		<div data-role="page" data-theme="a" id="page2">
+			<div data-role="header" data-position="inline">
+				<h1>Critica Daquele Filme</h1>
+				<a data-role="button" style="float: left" href="#page1" data-transition="slidedown">Voltar</a>
+			</div>
+			<div data-role="content" data-theme="a">				
+				<div id="idTabelaFilmes" style='width: 100%'  align="left">							
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
