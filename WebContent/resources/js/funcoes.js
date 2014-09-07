@@ -23,10 +23,10 @@ function listarFilmesNome() {
 			alert(textStatus + "\n" + errorThrown);
 		},
 		beforeSend: function(){			
-            $.mobile.showPageLoadingMsg();
+			$.mobile.loading('show');
 		},
 		complete: function(){
-		    $.mobile.hidePageLoadingMsg();
+			$.mobile.loading('hide');
 		}
 	});
 }
